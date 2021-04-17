@@ -1,0 +1,73 @@
+{
+  "name": "kd",
+  "description": "一个web工作室网站",
+  "author": "xpx",
+  "version": "1.0.0",
+  "private": true, 
+  "scripts": {
+    "serve": "node --max_old_space_size=4096 node_modules/@vue/cli-service/bin/vue-cli-service.js serve --open",
+    "build": "node --max_old_space_size=4096 node_modules/@vue/cli-service/bin/vue-cli-service.js build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "element-ui": "2.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "normalize.css": "^8.0.0",
+    "vue": "^2.5.16",
+    "vue-router": "3.0.1",
+    "vuex": "3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "3.0.0-beta.15",
+    "@vue/cli-service": "3.0.0-beta.15",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "vue-template-compiler": "2.6.12",
+    "webpack-bundle-analyzer": "2.13.1"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "airbnb-base"
+    ],
+    "plugins": [
+      "vue",
+      "import"
+    ],
+    "rules": {
+      "vue/no-duplicate-attributes": [
+        "error"
+      ],
+      "no-param-reassign": 0,
+      "import/no-unresolved": 0,
+      "import/extensions": 0,
+      "import/no-extraneous-dependencies": 0
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
